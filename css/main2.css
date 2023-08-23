@@ -1,0 +1,85 @@
+/*CSS DEL NOSOTROS*/
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.navbar{
+    box-shadow: 2px 2px 5px #000000;
+    opacity: .9;
+}
+
+.navbar{
+    background: linear-gradient(-90deg, #000B18, #0052A2);
+}
+
+.baner{
+    height: auto;
+    width: 100%;
+}
+.navbar .nav-item .nav-link{
+    color: #dee2e6;
+}
+
+.navbar .nav-item .nav-link span:hover{
+    color: #0052A2;
+}
+
+.quienes{
+    background: linear-gradient(-90deg, #000B18, #0052A2);
+    box-shadow: 7px 7px 10px #000055;
+}
+
+.card-body{
+    box-shadow: 2px 2px 5px #000000;
+    opacity: .9;
+    border-radius: 0%;
+
+}
+.btn{
+    border-radius: 0%;
+}
+.contact-btn{
+    text-align: center;
+    cursor: pointer;
+    font-size:20px;
+}
+.contact-btn {
+    position: relative;
+    background-color: #28a745;
+    border: none;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.contact-btn:hover{
+   background:#fff;
+   box-shadow:0px 2px 10px 5px #97B1BF;
+   color: grey;
+}
+
+.contact-btn:after {
+    content: "";
+    background: #28a745;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.contact-btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+footer{
+    background: #5a5858b6;
+    box-shadow: 1px 1px 7px #000000;
+}
+
+.text-footer , .btn-footer{
+    color: rgb(240, 240, 241);
+}

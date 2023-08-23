@@ -1,0 +1,270 @@
+<!--pagina contacto-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="nsolar,nsolar chile,Energía solar,panel solar fotovoltaico, casas con paneles solares,poste solar, postes solares,ingenieria electrica,paneles fotovoltaicos,planos electricos,panel solar chile,paneles solares para casa,proyectos electricos,certificacion sec,regularizacion electrica,energia solar chile,panel solar rancagua" />
+  <title>Nsolar - Cotiza paneles solares y proyectos</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <!--GOOGLE FONT-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!--BOOTSTRAP 4-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--SCROLL REVEAL-->
+  <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+  <!--FONTAWESOME-->
+  <script src="https://kit.fontawesome.com/2e23dd5dfa.js" crossorigin="anonymous"></script>
+  <!--CUSTOM CSS-->
+  <link rel="stylesheet" href="css/main4.css">
+</head>
+
+<body>
+  <!--navegación-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo-navbar.png" width="200px" ;height="100px" alt="">
+      </a>
+      <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-auto">
+            <a class="nav-link font-weight-bold text-white" href="index.html"><span class="item">Inicio</span><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link font-weight-bold text-white" href="nosotros.html"><span class="item">Nosotros</span></a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link font-weight-bold text-white" href="soluciones-energeticas.html"><span class="item">Soluciones Energeticas</span></a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link btn btn-nav btn-outline-info text-white" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <header>
+    <div class="container mt-3">
+      <h1 class="text-muted text-center">Contactenos, estamos para usted.</h1>
+    </div>
+  </header>
+
+
+
+  <section class="formulario">
+    <div class="row division">
+      <div class="col-lg-6">
+        <section id="contacto" class="container">
+          <div class="contacto p-5 mt-3 mb-5">
+            <form id="formulariocontacto" onsubmit="submitForm(); return false;">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label class="text-white" for="inputNombre">Nombres</label>
+                    <input type="text" class="form-control" id="n" placeholder="Nombres" required="required"
+                      data-error="Porfavor ingrese su nombre">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="text-white" for="inputApellido">Apellidos</label>
+                    <input type="text" class="form-control" id="a" placeholder="Apellidos" required="required"
+                      data-error="Porfavor ingrese ts apellido">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label class="text-white" for="inputAddress">Correo</label>
+                    <input type="email" class="form-control" id="e" placeholder="abc@correo.cl" required="required"
+                      data-error="Ingrese un correo de contacto">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="text-white" for="inputTelefono">Telefono</label>
+                    <input type="text" class="form-control" id="t" placeholder="ej: +56 9 xxxxxxxx" required="required"
+                      data-error="Ingrese un telefono de contacto">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label class="text-white" for="inputDireccion">Direccion</label>
+                    <input type="text" class="form-control" id="d" placeholder="" required="required"
+                      data-error="Ingrese una dirección">
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group col-md-6 bg-outline-info">
+                    <label class="text-white" for="inputRegion">Región</label>
+                    <select id="r" class="form-control" required="required" data-error="Seleccione una región">
+                      <option selected>Seleccione</option>
+                      <option>Arica y Parinacota</option>
+                      <option>Tarapacá</option>
+                      <option>Atacama</option>
+                      <option>Coquimbo</option>
+                      <option>Valparaíso</option>
+                      <option>Metropolitana de Santiago</option>
+                      <option>Libertador Gral. Bernado O´Higgins</option>
+                      <option>Maule</option>
+                      <option>Ñuble</option>
+                      <option>Biobío</option>
+                      <option>La Araucanía</option>
+                      <option>Los Ríos</option>
+                      <option>Los Lagos</option>
+                      <option>Aysén del Gral. Carlos Ibáñez del Campo</option>
+                      <option>Magallanes y de la Antártica Chilena</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+
+                  <label class="text-white" for="inputInteres">¿Qué desea cotizar?</label>
+                  <select id="c" class="form-control" required="required" data-error="Seleccione una opción">
+                    <option selected>Seleccione</option>
+                    <option>Paneles solares para residenciales</option>
+                    <option>Paneles solares para Industrias</option>
+                    <option>Paneles solares para Agricultura</option>
+                    <option>Otros servicios</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <button id="mybtn" type="submit" name="submit" value="Submit form" class="btn btn-outline-info btn-lg">
+                  <span id="status"></span> Contactar con Nsolar.</button>
+              </div>
+
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="col-lg-6">
+        <div class="map mt-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2339.045065124991!2d-70.7163086032206!3d-33.99486456320421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966338ca9824abc5%3A0xaf5af923d562d05c!2sCamino%20Real%20480%2C%20Mostazal%2C%20O&#39;Higgins!5e0!3m2!1ses!2scl!4v1594100559806!5m2!1ses!2scl"
+            width=100% height=100% frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+          <a class="mt-2" href="tel:+56982672878">Fono Contacto: 56982672878, Chile</a>
+          //
+          <a class="mt-2" href="mailto:contactol@nsolar.cl"> Correo electronico: contacto@nsolar.cl</a>
+        </div>
+      </div>
+
+    </div>
+    <br><br><br>
+
+  </section>
+
+  <!--FOOTER-->
+  <footer id="footer">
+    <div class="mt-4 mb-3">
+
+      <footer class="page-footer font-small bg-dark pt-4">
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-1">
+          <li class="list-inline-item">
+            <h5 class="mb-1 text-footer">¿Tienes algún proyecto?</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="contacto.html" class="contact-btn btn btn-lg btn-info">Contactanos!</a>
+          </li>
+        </ul>
+
+
+        <hr>
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item btn-footer ">
+            <a href="https://www.facebook.com/NSolarChile/" target="_blank" style="color: #ffffff; text-decoration: none;" class="btn-floating mx-1">
+              <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item btn-footer">
+            <a href="https://www.instagram.com/nsolarchile/" target="_blank" style="color: #ffffff; text-decoration: none;" class="btn-floating mx-1">
+              <i class="fab fa-instagram-square fa-2x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item btn-footer ">
+            <a href="mailto:contacto@nsolar.cl" style="color: #ffffff; text-decoration: none;"
+              class="btn-floating mx-1">
+              <i class="fas fa-envelope-square fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <div class="col-md-2 mx-auto text-center">
+          <img src="img/logo-footer.png " width="70px" ;height="70px" alt="logo">
+        </div>
+
+        <div class="footer-copyright text-center mt-1 text-footer">
+          ©Nsolar 2020.
+        </div>
+      </footer>
+    </div>
+
+  </footer>
+
+  <!--BOOTSTRAP 4 Scripts-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal(".map, .formulario", {
+      duration: 1000,
+      origin: "top",
+      distance: "100px"
+    });
+  </script>
+  <script>
+    function _(id) { return document.getElementById(id); }
+    function submitForm() {
+      _("mybtn").disabled = true;
+      _("status").innerHTML = 'Por favor espere...';
+      var formdata = new FormData();
+      formdata.append("n", _("n").value);
+      formdata.append("a", _("a").value);
+      formdata.append("e", _("e").value);
+      formdata.append("t", _("t").value);
+      formdata.append("d", _("d").value);
+      formdata.append("r", _("r").value);
+      formdata.append("c", _("c").value);
+      var ajax = new XMLHttpRequest();
+      ajax.open("POST", "contacto.php");
+      ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4 && ajax.status == 200) {
+          if (ajax.responseText == "success") {
+            _("formulariocontacto").innerHTML = '<h2 class="text-white">Gracias, tu mensaje ha sido enviado.</h2>\n';
+          } else {
+            _("status").innerHTML = ajax.responseText;
+            _("mybtn").disabled = false;
+          }
+        }
+      }
+      ajax.send(formdata);
+
+    }
+
+  </script>
+</body>
+
+</html>
